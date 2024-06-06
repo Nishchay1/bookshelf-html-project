@@ -1,0 +1,115 @@
+body{
+  margin:0;
+  padding:0;
+  height:100%;
+  font-family:sans-serif;
+  background-color:#F5DEB3;
+}
+
+h1{
+    text-align:center;
+}
+
+.bookshelf {
+  width: 80%; /* Width of the bookshelf */
+  min-height: 600px; /* Height of the bookshelf */
+  /*background-color: #8B5E3F; /* Dark brown color for bookshelf */
+  background: url(wood-light.jpg);
+  margin: auto;
+  padding:20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  border-radius: 4px;
+}
+
+.books {
+  /*background-color: #784F3E; /* Darker brown color for the books div */
+  background: url(wood-medium.jpg);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px inset;
+  margin: auto;
+  display:flex;
+  height:100px;
+  align-items:end;
+  margin-bottom: 20px;
+  border-radius:3px;
+}
+
+.book {
+  height: 100%; /* Height of each book, taller than the books div */
+  background-color: red;
+  text-align: center;
+  border-left: 1px solid;
+  transition: all 0.1s ease-in-out;
+}
+
+.book:hover{
+  transform: rotate(10deg);
+}
+
+.book-text{
+	font-size:50px;
+	text-align:center;
+	margin:10px;
+}
+
+button {
+  background-color: #92472D; /* Dark brown wood color */
+  border: none;
+  color: #F1DECD; /* Light beige or ivory color for text */
+  padding: 15px 32px; /* Add some padding to make it look like a sign */
+  font-size: 1.2rem; /* Increase the font size for a more prominent sign */
+  border-radius: 5px; /* Rounded edges to make it look like a sign */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add some depth to the text */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3), -1px -1px 5px rgba(255, 255, 255, 0.5); /* Add some shadow to make it look like a sign */
+  transition: background-color 0.3s; /* Add a smooth transition when hovered */
+}
+
+button:hover {
+  background-color: #793E2F; /* Lighter brown wood color on hover */
+}
+
+.input-area{
+	display:flex;
+	flex-direction:column;
+	width:300px;
+	align-items:center;
+	text-align:center;
+	margin: 20px auto;
+}
+.title-textbox{
+  margin: 10px;
+  background: linear-gradient(to bottom, #b2946c 0%, #8b6d37 100%);
+  border: 3px solid #5e3f14;
+  border-radius: 10px;
+  padding: 10px;
+  font-size:20px;
+  color: #fff;
+  text-align: center;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.3);
+
+}
+
+.book-hover-text{
+	text-align:center;
+	margin:10px;
+	font-size:30px;
+}
+
+.sample{
+	display:flex;
+	justify-content:center;
+	margin:10px auto;
+}
+
+.file{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	margin:10px;
+}
+
+.add-book-btn{
+	width:290px;
+}
+.sample-btn{
+	width:290px;
+}
